@@ -1,19 +1,16 @@
 <template>
   <div>
     <navbar-menu />
-    <img alt="Vue logo" src="./assets/logo.png">
-    <welcome-page />
+    <router-view />
   </div>
 </template>
 
 <script>
 import NavbarMenu from './views/NavbarMenu.vue';
-import WelcomePage from '@/views/guest/WelcomePage.vue'
 
 export default {
   name: 'App',
   components: {
-    WelcomePage, 
     NavbarMenu
   }
 }
